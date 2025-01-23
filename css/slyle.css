@@ -1,0 +1,213 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+html,
+body {
+    height: auto;
+    min-height: 100vh;
+}
+
+html {
+    background: linear-gradient(180deg, #efecf1 0%, #40035b 100%);
+}
+
+input:focus {
+    outline: none;
+}
+
+main > div {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+#register-container {
+    max-width: 900px;
+    min-height: 50vh;
+    margin: 4rem auto;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#register-banner {
+    background: url(https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-login-no-tablet_114360-7873.jpg?t=st=1737651011~exp=1737654611~hmac=ee31987875a783ce1dc8d3e7a745b59c3b57d12b17544fbfbf27812a1cbc607e&w=740);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#banner-layer {
+    background-color: rgb(66 6 116 / 70%);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#register-banner h1 {
+    font-size: 3.8rem;
+    margin: 180px auto;
+    color: #fff;
+    word-spacing: 50rem;
+}
+
+#register-banner p,
+a {
+    color: #ccc;
+    font-size: 12px;
+}
+
+#register-form {
+    background-color: #fdfdfd;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+#register-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 0.6rem 0;
+}
+
+#generate-password {
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#generate-password:hover {
+    color: #9260eb;
+}
+
+#register-form #generated-password {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0.4rem;
+    color: #26292e;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#register-form #generated-password p {
+    color: #9260eb;
+    margin-bottom: 0.5rem;
+}
+
+#notification {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9260eb;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#register-form input[type="submit"] {
+    background-color: #9260eb;
+    color: #fff;
+    opacity: 0.8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: 0.4s;
+}
+
+#register-form input[type="submit"]:hover {
+    opacity: 2;
+}
+
+#copy-password {
+    margin: 10px auto;
+    background-color: transparent;
+    border: 1px solid #9260eb;
+    color: #9260eb;
+    padding: 5px 9px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#copy-password:hover {
+    background-color: #9260eb;
+    color: #fff;
+}
+
+@media (max-width: 769px) {
+    #register-container {
+        margin: 2rem;
+        flex-direction: column;
+    }
+
+    #register-banner h1 {
+        margin: 60px auto;
+    }
+
+    #register-banner {
+        width: 100%;
+    }
+
+    #register-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 426px) {
+    #register-container {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    #register-banner h1 {
+        margin: 40px auto;
+    }
+
+    #register-banner {
+        width: 100%;
+    }
+
+    #register-form {
+        width: 100%;
+    }
+}
