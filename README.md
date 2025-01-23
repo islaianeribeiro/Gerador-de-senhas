@@ -3,7 +3,7 @@
 ## **Descrição do Projeto**
 
 Este é um projeto web que oferece uma interface de login interativa e responsiva, com um gerador de senhas embutido. O objetivo principal do projeto é facilitar a criação e o gerenciamento de senhas seguras para os usuários. O projeto inclui recursos modernos de design em CSS para garantir uma experiência agradável e intuitiva.
-[Link do projeto:](https://gerador-de-senhas-islaianeribeiro.netlify.app/)
+[Link do projeto](https://gerador-de-senhas-islaianeribeiro.netlify.app/)
 
 ---
 
